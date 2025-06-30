@@ -84,7 +84,7 @@ function TimerDisplay({ timer, onBack }: Props) {
     return (
         <div className='flex items-center justify-center h-screen text-white'>
             <div className='w-full md:w-1/2 flex flex-col justify-center p-4 md:p-0'>
-                <div className={`bg-custom-dark ${isFinished ? 'shadow-red-900' : 'shadow-fuchsia-900'} shadow-2xl mt-4 px-20 py-10 rounded-lg grid grid-cols-5`}>
+                <div className={`bg-custom-dark ${isFinished ? 'shadow-red-900' : 'shadow-fuchsia-900'} shadow-2xl mt-4 px-10 py-10 rounded-lg grid grid-cols-5 gap-2`}>
                     <div className='flex flex-col items-center'>
                         <span className='text-6xl font-bold'>{format(remaining).split(':')[0]}</span>
                     </div>
