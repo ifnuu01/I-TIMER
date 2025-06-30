@@ -1,6 +1,6 @@
 import { Hourglass, Play } from 'lucide-react';
 import type { TimerFormProps, Timer } from '../types/timer.type';
-
+import Footer from './Footer';
 
 function TimerForm({ timer, setTimer, onStart }: TimerFormProps) {
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>, field: keyof Timer) => {
@@ -42,6 +42,7 @@ function TimerForm({ timer, setTimer, onStart }: TimerFormProps) {
             <button
                 onClick={handleSubmit}
                 className='mt-8 flex justify-center font-bold bg-custom-dark rounded-lg shadow-lg py-5 w-1/2 cursor-pointer hover:scale-110'><Play /></button>
+            <Footer />
         </div>
     )
 }

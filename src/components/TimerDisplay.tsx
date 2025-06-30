@@ -2,6 +2,7 @@ import { Play, Pause, Repeat, ArrowLeftToLine } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import sound from '../../public/sound.wav';
 import type { Props } from '../types/timer.type';
+import Footer from './Footer';
 
 
 function TimerDisplay({ timer, onBack }: Props) {
